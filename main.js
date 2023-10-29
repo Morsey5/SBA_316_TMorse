@@ -21,7 +21,17 @@ const photoUrls = [
     'Images/IMG_1351.jpeg',
     'Images/IMG_1499.jpeg',
     'Images/IMG_1648.jpeg',
-    'Images/IMG_1666.jpeg'
+    'Images/IMG_1666.jpeg',
+    'Images/IMG_1672.jpeg',
+    'Images/IMG_1678.jpeg',
+    'Images/IMG_1836.jpeg',
+    'Images/IMG_2008.jpeg',
+    'Images/IMG_2184.jpeg',
+    'Images/IMG_2200.jpeg',
+    'Images/IMG_2379.jpeg',
+    'Images/IMG_2560.jpeg',
+    'Images/IMG_2700.jpeg',
+    'Images/IMG_2706.jpeg'
 ];
 
 let currentPhotoIndex = 0;
@@ -46,3 +56,21 @@ thumbsDownButton.addEventListener('click', () => {
     alert('Thumbs Down!');
 });
 
+//for the comment form
+
+const commentForm = document.getElementById("commentForm");
+const commentsContainer = document.getElementById("comments");
+
+commentForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const commentText = document.getElementById("comment").value;
+
+    const commentElement = document.createElement("div");
+    commentElement.className = "comment";
+    commentElement.innerHTML = `${commentText}`;
+
+    commentsContainer.appendChild(commentElement);
+
+    document.getElementById("comment").value = "";
+});
