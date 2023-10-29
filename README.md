@@ -6,6 +6,6 @@
 
 #3 I need to add more photos and the form is not added yet. The form is going to allow you to add comments.
 
-#4 
+#4 Coming back to fix the comment form
 
 
