@@ -57,6 +57,7 @@ thumbsDownButton.addEventListener('click', () => {
 });
 
 //for the comment form
+// currently not working, will revisit another time to fix it. All of my research is not telling me what I am doing wrong
 
 const commentForm = document.getElementById("commentForm");
 const commentsContainer = document.getElementById("comments");
